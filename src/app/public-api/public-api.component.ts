@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-public-api',
@@ -7,5 +8,15 @@ import { Component } from '@angular/core';
 })
 export class PublicAPIComponent {
 
+  constructor(api:ApiService){
+    api.fetchPublicApi().subscribe(
+      (response)=>{
+        this.publicdata=response
+
+      }
+    )
+  }
+
+  publicdata:any=[]
 
 }

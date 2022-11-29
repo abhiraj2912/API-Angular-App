@@ -13,6 +13,7 @@ import { UserDataComponent } from './user-data/user-data.component';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const myroute:Routes=[
   {
@@ -66,7 +67,8 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
