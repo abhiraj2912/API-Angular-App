@@ -8,6 +8,7 @@ import { PublicDataComponent } from './public-data/public-data.component';
 import { PublicAPIComponent } from './public-api/public-api.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const myroute:Routes=[
   {
@@ -25,6 +26,10 @@ const myroute:Routes=[
   {
     path:"userinfo",
     component:UserInfoComponent
+  },
+  {
+    path:"products",
+    component:ProductListComponent
   }
 
 ]
@@ -35,12 +40,13 @@ const myroute:Routes=[
     PassengerDataComponent,
     PublicDataComponent,
     PublicAPIComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
