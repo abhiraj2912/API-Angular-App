@@ -12,6 +12,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { TodoComponent } from './todo/todo.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myroute:Routes=[
   {
@@ -41,6 +42,10 @@ const myroute:Routes=[
   {
     path:"todo",
     component:TodoComponent
+  },
+  {
+    path:"quotes",
+    component:QuotesComponent
   }
 
 ]
@@ -55,7 +60,8 @@ const myroute:Routes=[
     ProductListComponent,
     UserDataComponent,
     TodoComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
