@@ -9,6 +9,7 @@ import { PublicAPIComponent } from './public-api/public-api.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 const myroute:Routes=[
   {
@@ -41,7 +42,8 @@ const myroute:Routes=[
     PublicDataComponent,
     PublicAPIComponent,
     UserInfoComponent,
-    ProductListComponent
+    ProductListComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
